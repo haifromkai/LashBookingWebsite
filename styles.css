@@ -1,0 +1,135 @@
+body {
+    padding: 20px 20px 80px 20px; /* Add 20px padding around the entire website, with extra padding at the bottom */
+    background: linear-gradient(to bottom, #f0f0f0, #fbbefc); /* Gradient background */
+}
+
+/* index.html styling */
+.brand {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 20px; /* Add some top margin */
+    /* border-style: solid; */
+}
+
+.brand img {
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    width: 150px;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20%;
+}
+
+.brand h1 {
+    font-size: 30px;
+    color: #000000;
+    margin-top: 5px; /* Add space between logo and heading */
+    margin-bottom: 0px;
+}
+
+
+.intro {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertically center the items */
+    margin-top: 20px; /* Add some top margin */
+    border: 3px solid #ffffff; /* Add a solid border */
+}
+
+.intro img {
+    padding: 10px; /* Add some padding */
+    margin: 0; /* Remove default margin */
+    width: 30%; /* Set width to 50% of container */
+    max-height: 300px; /* Set maximum height */
+    object-fit: contain; /* Maintain aspect ratio */
+    box-sizing: border-box; /* Include border in width calculation */
+    flex-grow: 1; /* Grow to fill available space */
+    border-radius: 20%; /* Add rounded corners */
+}
+
+.intro-text {
+    padding: 10px; /* Add some padding */
+    width: 50%; /* Set width to 50% of container */
+    box-sizing: border-box; /* Include padding in width calculation */
+    flex-grow: 1; /* Grow to fill available space */
+    font-size: 14px;
+}
+
+.intro h2, .intro p {
+    margin: 0; /* Remove default margin */
+}
+
+
+.services_overview {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Horizontally center items */
+    margin-top: 20px; /* Add some top margin */
+    border: 3px solid #ffffff; /* Add a solid border */
+}
+
+.services_overview h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 10px; /* Add some bottom margin */
+    margin-top: 10px;
+}
+
+.services_row {
+    display: flex;
+    justify-content: space-around; /* Evenly space items in the row */
+    width: 100%; /* Ensure full width */
+}
+
+.services_overview img {
+    width: 100px; /* Set width of images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20%;
+}
+
+.services_overview h3 {
+    text-align: center; /* Center the heading */
+    margin-top: 0px; /* Add some top margin */
+}
+
+
+.button-to-policy button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: #000000;
+    color: #ffffff; /* text color */
+    cursor: pointer;
+    transition: background-color 0.5s ease; /* Smooth color transition */
+}
+
+.button-to-policy a {
+    text-decoration: none; /* Remove underline */
+}
+
+.button-to-policy button:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #f17bf3; /* Pink text color on hover */
+}
+
+
+.socials {
+    position: fixed;
+    bottom: 0;
+    left: 50%; /* Move to the horizontal center */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 100%;
+    padding: 10px 20px; /* Add padding */
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    background-color: rgba(255, 255, 255, 0.435); /* Semi-transparent white background */
+    backdrop-filter: blur(100%); /* Apply blur effect */
+    z-index: 1000; /* Ensure it's on top of other content */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow at the bottom */
+}
+
+.socials img {
+    width: 40px; /* Adjust the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add horizontal margin */
+}
